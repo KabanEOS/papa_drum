@@ -1,0 +1,193 @@
+body{
+    font-family: sans-serif;
+    background-color: black;
+}
+
+
+.globalContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  width: 100%;
+  height: 100%;
+}
+.topContainer {
+  display: flex;
+  flex-direction: row;
+
+  width: 100%;
+  height: 120px;
+  display: flex;
+}
+.title {
+  align-items: flex-start;
+  width: 60%;
+  color: rgba(206, 206, 206, 0.384);
+  font-size: 2rem;
+}
+.buttonZone {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  width: 43%;
+  padding-bottom: 9px;
+}
+
+img {
+  width: 46px;
+  height: 46px;
+  filter: invert(1);
+  padding-left: 9px;
+  transition: transform 0.1s;
+  cursor: pointer;
+}
+img:hover {
+  transform: scale(1.1);
+}
+.tempoContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 49px;
+  border-radius: 3px;
+  border: rgb(206, 206, 206);
+}
+.playPause{
+  width: 46px;
+  height: 46px;
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 23px 0px 23px 46px;
+  border-color: transparent transparent transparent white;
+  transition: all 100ms ease-in-out;
+  cursor: pointer;
+}
+.playPause:hover{
+  transform: scale(1.1);
+}
+
+.pause{
+  border-style: double;
+  border-width:0px 0px 0px 46px;
+  cursor: pointer;
+}
+
+.tempoValue {
+  font-family: consolas;
+  font-size: 46px;
+  color:white ;
+}
+
+.tileContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color:rgba(250, 250, 250, 0);
+    width: calc(35*16px);
+    height: calc(35*16px);
+}
+
+.tileGridClick {
+    height: calc(35*16px);
+    display: flex;
+    flex-direction: row;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-auto-rows: minmax(100px, auto);
+    gap: 1px 1px;
+    grid-template-areas:
+      "q0 q1 q2 q3 q4 q5 q6 q7 q8 q9 q10 q11 q12 q13 q14 q15"
+      "w0 w1 w2 w3 w4 w5 w6 w7 w8 w9 w10 w11 w12 w13 w14 w15"
+      "e0 e1 e2 e3 e4 e5 e6 e7 e8 e9 e10 e11 e12 e13 e14 e15"
+      "r0 r1 r2 r3 r4 r5 r6 r7 r8 r9 r10 r11 r12 r13 r14 r15"
+      "t0 t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 t11 t12 t13 t14 t15"
+      "y0 y1 y2 y3 y4 y5 y6 y7 y8 y9 y10 y11 y12 y13 y14 y15"
+      "u0 u1 u2 u3 u4 u5 u6 u7 u8 u9 u10 u11 u12 u13 u14 u15"
+      "i0 i1 i2 i3 i4 i5 i6 i7 i8 i9 i10 i11 i12 i13 i14 i15"
+      "a0 a1 a2 a3 a4 a5 a6 a7 a8 a9 a10 a11 a12 a13 a14 a15"
+      "s0 s1 s2 s3 s4 s5 s6 s7 s8 s9 s10 s11 s12 s13 s14 s15"
+      "d0 d1 d2 d3 d4 d5 d6 d7 d8 d9 d10 d11 d12 d13 d14 d15"
+      "f0 f1 f2 f3 f4 f5 f6 f7 f8 f9 f10 f11 f12 f13 f14 f15"
+      "g0 g1 g2 g3 g4 g5 g6 g7 g8 g9 g10 g11 g12 g13 g14 g15"
+      "h0 h1 h2 h3 h4 h5 h6 h7 h8 h9 h10 h11 h12 h13 h14 h15"
+      "j0 j1 j2 j3 j4 j5 j6 j7 j8 j9 j10 j11 j12 j13 j14 j15"
+      "k0 k1 k2 k3 k4 k5 k6 k7 k8 k9 k10 k11 k12 k13 k14 k15"
+}
+
+.gridContainer > div {
+    background-color: rgba(129, 89, 204, 0.87);
+    text-align: center;
+    border-radius: 1px;
+    cursor: pointer;
+    
+    width: 35px;
+    height: 35px;
+  }
+
+.gridContainer > div:hover {
+    background-color: rgba(106, 216, 96, 0.904);
+    text-align: center;
+    border-radius: 1px;
+
+    width: 35px;
+    height: 35px;
+  }
+
+
+  .gridTitleContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-auto-rows: minmax(100px, auto);
+    gap: 1px 1px;
+    padding-right: 1px;
+}
+
+.gridTitleContainer > div {
+    display: flex;
+    align-items: center;
+    color:rgb(206, 206, 206);
+    border: 1px solid  rgba(121, 182, 211, 0.466);
+    background-color: rgba(147, 174, 192, 0.329);
+    text-align: center;
+    border-radius: 1px;
+    width: 170px;
+    height: 33px;
+    cursor: pointer;
+  }
+
+  .keyName{
+    height: 27px;
+    width: 27px;
+    background-color:rgb(68, 196, 247);
+    border-radius: 2px;
+
+    margin-right: 4px;
+    margin-left: -1px;
+    
+    text-align: center;
+    justify-content: center;
+    line-height:27px;
+
+    font-weight: bold;
+    font-size:1rem;
+  }  
+  
+  .gridTitleContainer > div {
+    padding-left:6px;
+    font-size: 0.7rem;
+  }
+
+  .sounds {
+    height: 0;
+  } 
+  .key {
+    height: 0;
+  }

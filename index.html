@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PapaDrumDrum</title>
+</head>
+
+<body>
+    <div id="sounds" class="sounds">
+        <audio data-key="81" class="key" src="./media/jp2/jestMozliwe.mp3" id="jestMozliweAudio"
+            audio[data-key="jestMozliweAudio" ] ;></audio>
+        <audio data-key="87" class="key" src="./media/jp2/jeszczeJak.mp3" id="jeszczeJakAudio"
+            audio[data-key="jeszczeJakAudio" ] ;></audio>
+        <audio data-key="69" class="key" src="./media/jp2/coMamRobic.mp3" id="coMamRobicAudio"
+            audio[data-key="coMamRobicAudio" ] ;></audio>
+        <audio data-key="82" class="key" src="./media/jp2/bardzo.mp3" id="bardzoAudio" audio[data-key="bardzoAudio" ]
+            ;></audio>
+        <audio data-key="84" class="key" src="./media/jp2/warkoczykami.mp3" id="warkoczykamiAudio"
+            audio[data-key="warkoczykamiAudio" ] ;></audio>
+        <audio data-key="89" class="key" src="./media/jp2/noJakPJ.mp3" id="noJakPJAudio" audio[data-key="noJakPJAudio"
+            ] ;></audio>
+        <audio data-key="85" class="key" src="./media/jp2/takPJ.mp3" id="takPJAudio" audio[data-key="takPJAudio" ]
+            ;></audio>
+        <audio data-key="73" class="key" src="./media/jp2/tsoo.mp3" id="tsooAudio" audio[data-key="tsooAudio" ]
+            ;></audio>
+        <audio data-key="65" class="key" src="./media/drumm/sounds/boom.wav" id="boomAudio" audio[data-key="boomAudio"
+            ] ;></audio>
+        <audio data-key="83" class="key" src="./media/drumm/sounds/clap.wav" id="clapAudio" audio[data-key="clapAudio"
+            ] ;></audio>
+        <audio data-key="68" class="key" src="./media/drumm/sounds/hihat.wav" id="hihatAudio"
+            audio[data-key="hihatAudio" ] ;></audio>
+        <audio data-key="70" class="key" src="./media/drumm/sounds/kick.wav" id="kickAudio" audio[data-key="kickAudio"
+            ] ;></audio>
+        <audio data-key="71" class="key" src="./media/drumm/sounds/openhat.wav" id="openhatAudio"
+            audio[data-key="openhatAudio" ] ;></audio>
+        <audio data-key="72" class="key" src="./media/drumm/sounds/ride.wav" id="rideAudio" audio[data-key="rideAudio"
+            ] ;></audio>
+        <audio data-key="74" class="key" src="./media/drumm/sounds/tink.wav" id="tinkAudio" audio[data-key="tinkAudio"
+            ] ;></audio>
+        <audio data-key="75" class="key" src="./media/drumm/sounds/tom.wav" id="tomAudio" audio[data-key="tomAudio" ]
+            ;></audio>
+    </div>
+
+    <div class="globalContainer">
+        <div class="topContainer">
+            <div class="title">
+                PaPaDrum V2
+            </div>
+            <div class="buttonZone">
+                <div class="playPause" id="playPause"></div>
+                <!-- <img src="./media/icons/stop.png" id="stopBtn"></img> -->
+                <div class="tempoContainer">
+                    <img src="./media/icons/left-arrow.png" id="tempoDown"></img>
+                    <img src="./media/icons/right-arrow.png" id="tempoUp"></img>
+                    <div id="tempoValue" class="tempoValue">120</div>
+                </div>
+            </div>
+        </div>
+        <div class="tileContainer">
+            <div class="tileGridClick">
+
+                <div id="gridTitleContainer" class="gridTitleContainer">
+                    <div accessKey="81" id="jestMozliwe">
+                        <div class="keyName">
+                            Q
+                        </div>
+                        Jest możliwe!
+                    </div>
+                    <div accessKey="87" id="jeszczeJak">
+                        <div class="keyName">
+                            W
+                        </div>
+                        Jeszcze jak?!?
+                    </div>
+                    <div accessKey="69" id="coMamRobic">
+                        <div class="keyName">
+                            E
+                        </div>
+                        Co mam robić?
+                    </div>
+                    <div accessKey="82" id="bardzo">
+                        <div class="keyName">
+                            R
+                        </div>
+                        Bardzo!
+                    </div>
+                    <div accessKey="84" id="warkoczykami">
+                        <div class="keyName">
+                            T
+                        </div>
+                        Z warkoczykami..
+                    </div>
+                    <div accessKey="89" id="noJakPJ">
+                        <div class="keyName">
+                            Y
+                        </div>
+                        No jak PJ powiedział?
+                    </div>
+                    <div accessKey="85" id="takPJ">
+                        <div class="keyName">
+                            U
+                        </div>
+                        Tak jak PJ powiedzieł
+                    </div>
+                    <div accessKey="73" id="tsoo">
+                        <div class="keyName">
+                            I
+                        </div>
+                        Tsooo..?
+                    </div>
+                    <div accessKey="65" id="boom">
+                        <div class="keyName">
+                            A
+                        </div>
+                        Boom
+                    </div>
+                    <div accessKey="83" id="clap">
+                        <div class="keyName">
+                            S
+                        </div>
+                        Clap
+                    </div>
+                    <div accessKey="68" id="hihat">
+                        <div class="keyName">
+                            D
+                        </div>
+                        Hihat
+                    </div>
+                    <div accessKey="70" id="kick">
+                        <div class="keyName">
+                            F
+                        </div>
+                        Kick
+                    </div>
+                    <div accessKey="71" id="openhat">
+                        <div class="keyName">
+                            G
+                        </div>
+                        Openhat
+                    </div>
+                    <div accessKey="72" id="ride">
+                        <div class="keyName">
+                            H
+                        </div>
+                        Ride
+                    </div>
+                    <div accessKey="74" id="tink">
+                        <div class="keyName">
+                            J
+                        </div>
+                        Tink
+                    </div>
+                    <div accessKey="75" id="tom">
+                        <div class="keyName">
+                            K
+                        </div>
+                        Tom
+                    </div>
+                </div id="gridTitleContainer" class="gridTithleContainer">
+
+                <div id="gridContainer" class="gridContainer">
+
+                </div>
+            </div class="tileGridClick">
+        </div class="tileContainer">
+    </div class="globalContainer">
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
